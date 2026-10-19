@@ -1,0 +1,43 @@
+{
+  "resources": {
+    "max_cpu_percent": 95.0,
+    "max_ram_percent": 95.0,
+    "min_free_ram_mb": 150.0,
+    "max_disk_usage_gb": 20.0,
+    "max_sources_per_topic": 5,
+    "max_session_duration_minutes": 30
+  },
+  "search": {
+    "provider": "duckduckgo",
+    "searxng_url": "http://localhost:8080",
+    "api_key": "",
+    "timeout_seconds": 10,
+    "verify_ssl": true,
+    "rate_limit_delay_seconds": 1.5
+  },
+  "scheduler": {
+    "mode": "manual",
+    "interval_minutes": 60,
+    "active_hours_start": 8,
+    "active_hours_end": 22,
+    "auto_train_candidates": false,
+    "min_dataset_size_for_training": 20
+  },
+  "training": {
+    "base_model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "use_lora": true,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0002,
+    "batch_size": 1,
+    "epochs": 3,
+    "min_accuracy_gain_for_promotion": 0.03,
+    "max_regression_tolerance": 0.02
+  },
+  "privacy": {
+    "allow_internet_search": true,
+    "allow_local_telemetry": false,
+    "sandbox_code_execution": true,
+    "strip_unsafe_prompts": true
+  }
+}
