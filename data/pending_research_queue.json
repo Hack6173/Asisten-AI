@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "queue_1792485255_0",
+    "topic": "halo",
+    "questions": [
+      "halo"
+    ],
+    "origin": "chat_unanswered",
+    "queued_at": "2026-10-20T15:34:15.532807",
+    "status": "pending"
+  }
+]
